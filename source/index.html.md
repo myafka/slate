@@ -26,24 +26,12 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
 
-
-
-
-
-
-
 #Как добавить картинку
 
 1. Сохраните картинку.
 2. Добавьте ссылку.
+    <img src="images/kitten.jpg">
 3. Соберите документ.
-
-
-
-
-
-
-
 
 # Authentication
 
@@ -138,9 +126,6 @@ let kittens = api.kittens.get();
 
 This endpoint retrieves all kittens.
 
-
-
-
 ### HTTP Request
 
 `GET http://example.com/api/kittens`
@@ -149,11 +134,8 @@ This endpoint retrieves all kittens.
 
 Parameter | Description | Default
 --------- | ------- | -----------
-include_cats | Include cats | false
-available | Available | true
-
-
-
+include_cats | If set to true, the result will also include cats. | false
+available | If set to false, the result will include kittens that have already been adopted. | true
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
