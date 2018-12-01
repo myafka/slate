@@ -25,6 +25,26 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 
 This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
+
+
+
+
+
+
+
+#Как добавить картинку
+
+1. Сохраните картинку.
+2. Добавьте ссылку.
+3. Соберите документ.
+
+
+
+
+
+
+
+
 # Authentication
 
 > To authorize, use this code:
@@ -32,28 +52,28 @@ This example API documentation page was created with [Slate](https://github.com/
 ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kittn::APIClient.authorize!('Мур')
 ```
 
 ```python
 import kittn
 
-api = kittn.authorize('meowmeowmeow')
+api = kittn.authorize('Мур')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: Мур"
 ```
 
 ```javascript
 const kittn = require('kittn');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = kittn.authorize('Мур');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `Мур` with your API key.
 
 Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
@@ -118,16 +138,22 @@ let kittens = api.kittens.get();
 
 This endpoint retrieves all kittens.
 
+
+
+
 ### HTTP Request
 
 `GET http://example.com/api/kittens`
 
 ### Query Parameters
 
-Parameter | Default | Description
+Parameter | Description | Default
 --------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+include_cats | Include cats | false
+available | Available | true
+
+
+
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
